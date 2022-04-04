@@ -55,7 +55,7 @@
           Эффективные решения<br />
           для вашего бизнеса
         </h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
       </section>
       <!--Second section- About us-->
       <section class="about-us section">
@@ -352,5 +352,13 @@
         </div>
         </div>
     </footer>
+
+
+    <div class="backdrop is-hidden"data-modal>
+      <div class="modal-wrapper">
+        <button type="button" class="modal-button" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
