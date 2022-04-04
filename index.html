@@ -55,7 +55,7 @@
           Эффективные решения<br />
           для вашего бизнеса
         </h1>
-        <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+        <button class="hero-button" type="button"data-modal-open>Заказать услугу</button>
       </section>
       <!--Second section- About us-->
       <section class="about-us section">
@@ -107,27 +107,38 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="works-list list">
             <li class="worl-list-item">
-              <a class="work-list-link link" href="./index.html">
-                <img src="./img/wedo/squoosh/wedo1.jpg" alt="Кодинг" width="370" />
-              </a>
+              <div class="work-thumb">
+                <a class="work-list-link link" href="./index.html">
+                  <img src="./img/wedo/squoosh/wedo1.jpg" alt="Кодинг" width="370" />
+                  <p class="work-descr">Десктопные приложения</p>
+                </a>
+              </div>
             </li>
             <li class="worl-list-item">
-              <a class="work-list-link link" href="">
-                <img
-                  src="./img/wedo/squoosh/wedo2.jpg"
-                  alt="Прототипы мбильных приложений на ноутбуке"
-                  width="370"
-                />
-              </a>
+              <div class="work-thumb">
+                <a class="work-list-link link" href="">
+                  <img
+                    src="./img/wedo/squoosh/wedo2.jpg"
+                    alt="Прототипы мобильных приложений"
+                    width="370"
+                  />
+                </a>
+                <p class="work-descr">
+                  Мобильные приложения
+                </p>
+              </div>
             </li>
             <li class="worl-list-item">
-              <a class="work-list-link link" href="">
-                <img
-                  src="./img/wedo/squoosh/wedo3.jpg"
-                  alt="Дизайнер выбирает цвет на цифровой палитре"
-                  width="370"
-                />
-              </a>
+              <div class="work-thumb">
+                <a class="work-list-link link" href="">
+                  <img
+                    src="./img/wedo/squoosh/wedo3.jpg"
+                    alt="Дизайнер выбирает цвет на цифровой палитре"
+                    width="370"
+                  />
+                </a>
+                <p class="work-descr">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -356,7 +367,7 @@
 
     <div class="backdrop is-hidden"data-modal>
       <div class="modal-wrapper">
-        <button type="button" class="modal-button" data-modal-close>X</button>
+        <button type="button" class="modal-button"data-modal-close>X</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
