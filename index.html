@@ -401,7 +401,13 @@
 <!-- MODAL -->
     <div class="backdrop is-hidden"data-modal>
       <div class="modal-wrapper">
-        <button type="button" class="modal-close-button"data-modal-close>X</button>
+        <button type="button" class="modal-close-button"data-modal-close>
+          <span>
+            <svg class="icon-cancel">
+              <use href="./img/symbol-defs.svg#icon-cancel"></use>
+            </svg>
+          </span>
+        </button>
         
         <form class="form" autocomplete="off">
           <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
@@ -437,9 +443,11 @@
             name="mail"
             id="mail"
             />
+            <span class="modal-form-icon">
               <svg class="icon-mail">
-              <use href="./img/symbol-defs.svg#icon-mail"></use>
-            </svg>
+               <use href="./img/symbol-defs.svg#icon-mail"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-field-textarea">
             <label for="textarea" class="form-label">Комментарий</label>
@@ -459,6 +467,9 @@
             name="checkbox"
             id="checkbox"
             />
+            <svg class="checkbox-icon">
+              <use href="./img/symbol-defs.svg#icon-not-checked"></use>
+            </svg>
             <p class="checkbox-text">Соглашаюсь с рассылкой и принимаю</p>
             <a href=""><span class="checkbox-link link">Условия договора</span></a>
           </div>
