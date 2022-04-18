@@ -615,6 +615,7 @@ margin-bottom: 20px;
   background-color: var(--brend-color-);
   color: var(--white-color);
   border-radius: 4px;
+  border: transparent;
     
 }
 
@@ -868,7 +869,7 @@ cursor: pointer;
 .form {
   display: flex;
   flex-direction: column;
-  margin: 40px;
+  padding: 40px;
 
 }
 .modal-text {
@@ -892,18 +893,11 @@ color: var(--sec-text-color-) ;
   font-family: Roboto;
 font-size: 12px;
 line-height: 14px;
+margin-bottom: 4px;
 
 
 letter-spacing: 0,01;
 color:var(--main-text-color-);
-}
-
-.form-field-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .form-input-checkbox {
@@ -911,15 +905,11 @@ color:var(--main-text-color-);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  /* width: 200px;
+  height: 20px; */
 
   position: absolute;
-  /* КОСТИЛЬ */
-  width: 270px;
-  height: 20px;
-  margin-right: 200px;
-  margin-left: 40px;
   
-
 }
 .checkbox-link {
   margin-left: 4px;
@@ -933,11 +923,21 @@ color:var(--main-text-color-);
 }
 
 .checkbox-icon {
-  display: inline-block;
+  display: block;
   width: 16px;
   height: 16px;
-  fill: var(--sec-text-color-);
-  margin-right: 4px;
+  color: var(--sec-text-color-);
+  margin-right: 8px;
+  border-radius: 4px;
+  border: 2px solid var(--logo-sec-color-);
+}
+
+.form-label-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .form-input-checkbox:checked + .checkbox-icon{
@@ -989,6 +989,14 @@ color:var(--main-text-color-);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1,17;
+  letter-spacing: 0,01;
+}
+
 .form-textarea:hover, .form-textarea:focus-within  {
   border-color: var(--brend-color-);
 }
@@ -1009,6 +1017,8 @@ color:var(--main-text-color-);
 }
 
 .form-textarea {
+  display: block;
+  
   margin-left: auto;
   margin-right: auto;
   width: 448px;
@@ -1020,6 +1030,7 @@ color:var(--main-text-color-);
   border: 1px solid rgba(33, 33, 33, 0.2); 
 
 }
+
 
 .form-field + .modal-form-icon {
   position: absolute;
